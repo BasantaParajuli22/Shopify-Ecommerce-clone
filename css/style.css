@@ -1,0 +1,344 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+}
+.display_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar_right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* for nav bar */
+.horizontal_navbar{
+    
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    width: 100%;
+    padding: 0px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_ul {
+    padding: 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo_navbar {
+    display: flex;
+    cursor: pointer;
+}
+.logo_navbar i{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal_navbar ul {
+    list-style-type: none;
+}
+.horizontal_navbar ul li {
+    padding: 0px 15px;
+}
+.horizontal_navbar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+.horizontal_navbar ul li a:hover{
+    text-decoration: underline;
+}
+.navbar_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 22px; 
+    background-color: white; 
+    color: rgb(0, 0, 0); 
+    height: 60px;
+    width: 150px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+}
+/* for dropdown animation section */
+.dropdown ul li a:hover{
+    text-decoration: none;
+}
+.dropdown { 
+    display: none;
+    /* giving animation to dropdown */
+    animation: dropdown_cool 1s ease forwards; 
+}
+/* navbar ko ul li ma hover garda dropdown hunxa */
+.horizontal_navbar ul li:hover .dropdown{
+    position: absolute;
+    display: flex;
+    justify-self: flex-start;
+    background-color: #000000;
+    top: 50px; 
+    z-index: 1000; 
+    overflow: hidden;
+    transition: opacity 0.3s ease 0.5s; 
+    opacity: 0; 
+}
+.horizontal_navbar ul li:hover .dropdown:hover {
+opacity: 1;
+}
+/* animation for .dropdown */
+@keyframes dropdown_cool{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.dropdown ul{
+    display: flex; 
+}
+.dropdown ul li{
+    height: 400px;
+    width: 200px;
+    color: rgb(250, 250, 250);
+    font-size: 18px;
+}
+/* padding between start sell market manage */
+.dropdown ul li a{
+    display: flex;
+    padding-bottom: 10px;
+}
+.dropdown_dr_head ul {
+    width: 200px;
+    height: 400px;
+}
+.dropdown_dr_head ul li{
+    font-size: 16px;
+}
+.dropdown_description{
+    flex-direction: column;
+}
+.dropdown_description li {
+    padding: 15px 0;
+}
+.dropdown_dr_head,
+.dropdown_description {
+    padding: 20px;
+}
+#logo_sp{
+    background: linear-gradient(to right, #0d00ff, #00fffb, green) ;
+    background-clip: text; 
+    color: transparent; 
+    font-size: 20px;
+} 
+
+/* body section starts */
+.container1{
+    text-align: center;
+    position: relative;
+    margin: 0% 20% 0% 20%;
+ }  
+.First_note{
+    justify-content: center;
+    margin: 10% 0% 3% 0%;
+    font-size: 40px;
+    color: #008060;
+}
+.Second_head{
+    font-size: 36px;
+    color: grey;
+    margin: 0% 10% 0% 10%;
+}
+.image_main{
+    margin: 1%;
+    margin-top: 80px;
+}
+.Heading3{
+    margin: 40px 20px 10px 0px;
+    font-size: 24px;
+}
+.Heading2{
+    margin: 20px 20px 10px 0px;
+    font-size: 20px;
+}
+.Description1{
+    color:grey
+}
+.search_div{
+    width: 100%;
+    margin-bottom: 1%;
+}
+.search_div input{
+    width: 400px;
+    height: 70px;
+    font-size: 22px;
+    padding-left: 20px;
+}
+#searchbutton1{
+    border: 2px solid#008060;
+    margin-right: 10px;
+}
+.search_start_button{
+    padding: 16px;
+    font-size: 28px;
+    background-color: #008060;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+.container2{   
+    margin: 0% 10% 0% 20%;
+}
+
+/* min map  */
+.contact_div {
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact_div iframe{
+    margin: 0% 5% 0% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+/* footer section starts */
+.footer_last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #000000;
+}
+.footer_last ul{
+    list-style-type: none;
+    display: flex; 
+}
+.footer_last ul li a{
+    text-decoration: none;
+    color: #fff;
+ }
+ .footer_ul{
+    padding: 0%;
+ }
+.footer_ul li{
+    padding: 0px 10px;
+    color: #fff;
+}
+.footer_last_first{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer_logo{
+    padding: 0%;
+    font-size: 30px;
+    display: flex; 
+    justify-content:flex-end; 
+    align-items: center; 
+}
+.footer_logo i{
+   padding: 10px;
+   cursor: pointer;
+}
+/* for forms */
+.form_div {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.form_div label, .form_div input, .form_div textarea, .form_div button {
+    margin: 2px;
+    width: 100%;
+}
+.gender{
+    display: flex; 
+}
+#submit{
+    width: 50%;
+}
+.form_div input{
+    padding: 10px 10px;
+}
+
+/* navbar responsive banako */
+@media screen and (max-width: 1100px) {
+     .horizontal_navbar ul li a{
+        font-size: 15px;
+    }
+    .display_mini{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .horizontal_navbar ul li {
+        padding: 0px 5px;
+    }
+     .First_note b{
+        font-size: 24px;
+     }
+     .main_body_center .Second_head{
+        font-size: 22px;
+     }
+    .contact_div iframe{
+        margin: 10%;
+    }
+    .navbar_button {
+        font-size: 15px;
+        padding:10px;
+        width: 50px;
+    }
+    .footer_last{
+        height: 180px;
+        flex-direction: column;  
+    }
+     .footer_last_first ul{
+        margin-top: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    } 
+    .search_div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search_start_button{
+        margin: 1%;
+    }
+    #searchbutton1{
+        margin-right: 0px;
+    }
+    .display_mini{
+        display: none;
+    }
+}
+

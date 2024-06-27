@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shopify-ecommerce</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+ 
+    <header>
+        <div class="horizontal_navbar" >
+            <div class="navbar_left">
+            <ul class="navbar_ul">
+                <li><div class="logo_navbar"><i class='bx bxl-shopify bx-md' style="color: green; ;"></i><i style="color: white;">shopify</i></div></li>
+                 
+                <!-- this is list for dropdown section -->
+                
+                <li class="display_mini"><a href="#solutions" >Solutions<box-icon type='solid' name='chevron-down' color="white" class="arrow_head" animation='fade-down-hover' rotate="180" pull = "right" ></box-icon></a>
+                    <!-- <hr color="white" width="100%" > -->
+                    <div class="dropdown">
+                     <ul class="dropdown_dr_head">
+                        <ul class="dropdown_description">
+                            <li><a href="#Start">Start</a>
+                            <hr color="white" >
+                            <li>Start your business</li>
+                            <li>Build your brand</li>
+                            <li>Create your website</li>
+                            <li>Online store editor</li>
+                                    
+                        </ul>
+                        
+                        <ul class="dropdown_description" > 
+                            <li><a href="#Sell">Sell</a>
+                            <hr color="white" >
+                            <li>Sell online</li>
+                            <li>Grow your business online</li>
+                            <li>Sell in person</li>
+                            <li>Sell globally</li>
+                            <li>Sell wholesale & direct</li>
+                            <li>Accept online payments</li>
+                        </ul>
+                    
+                        <ul class="dropdown_description">
+                            <li><a href="#Market">Market</a>
+                                <hr color="white" >
+                            <li>Start your business</li>
+                            <li>Build your brand</li>
+                            <li>Create your website</li>
+                            <li>Online store editor</li>
+                        </ul>
+                    
+                        <ul class="dropdown_description">
+                            <li id="logo_name"><a href="#Manage"><i class='bx bx-store-alt' id="logo_sp"></i>Manage</a>
+                            <hr color="white" >
+                            <li>Start your business</li>
+                            <li>Build your brand</li>
+                            <li>Create your website</li>
+                            <li>Online store editor</li>
+                        </ul>        
+                        
+                    </ul>
+                    </div>
+                </li>
+
+                <li><a href="#resources" id="">Price</a></li>
+                <li><a href="#resources"  id="">Resources</a></li>
+                <li> <a href="#News" >WhatsNew</a></li>
+            </ul>
+            </div>
+            <!-- right navbar of horizontal navbar -->
+            <div class="navbar_right">
+            <ul class="navbar_ul">
+                <li class="display_mini"><div><a href="#contactus">Contact</a></div></li>
+                <li><div><a href="#startFree"><button class="navbar_button">Start free trial</button></a></div></li>
+            </div>
+            </ul>
+        </div>
+    </header>
+ 
+    <!-- Main body -->
+    
+        <section id="News">
+        <div class="container1">
+            <div class="main_body_center">
+                <div class="First_note "><b>Easily build and run your ecommerce website</b></div>
+                <div class="Second_head">Everything you need to manage your beautiful, fully-featured store.</div>
+                <div class="image_main"> <img src="./capture.JPG" alt="ecommerce jpg" height="250px" width="100%" id="main_img_id"> </div>
+            </section>
+            <section id="startFree">
+                <div class="Heading3 container1">Start your free 3-day trial today!</div>
+                <div class="search_div display_flex"> 
+                    <input type="text" placeholder="Enter your email address" id="searchbutton1">
+                    <button class="search_start_button ">Start free trial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+        <section id="resources" >
+        <div class="container2 ">
+            <hr>
+            <div class="Heading3">Customer relationship management</div>
+            <div class="Heading2">Manage customer groups</div>
+            <div class="Description1">Create groups of customers based upon search filters like: where theyre located, money spent, etc. Use this information to better understand customer behaviors or target these customers with marketing emails.</div>
+            <div class="Heading2">Create customer accounts</div>
+            <div class="Description1">You have the option to make your store public or restrict purchases to only those with accounts. The account-only option is useful if you want to set up a private or wholesale ecommerce site.</div>
+        </div>
+        </section>
+
+        <section id="">
+        <div class ="contact_div ">
+           <div class="display_flex"><h2>You can find us at::</h2></div>
+          
+            <!-- google map of our headquater -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.871909870713!2d83.46792817367223!3d27.628483476227878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39968432be835a0b%3A0x9050d582cdb10658!2sNepathya%20College!5e0!3m2!1sen!2snp!4v1711203107823!5m2!1sen!2snp" width="80%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+    
+        <section id="contactus">   
+            <div class="display_flex"><h2>Form SignUp</h2></div>       
+            <div class="form_div">
+                
+                <form action="">
+                    <label for="name">Name</label><input type="text" name="name" id="name">
+                    <label for="address">Address</label><input type="text" name="address" id="address">
+                    <label for="email">Email</label><input type="email" name="email" id="email">
+                    <label for="age">Age</label><input type="number" name="age" id="age">
+                    <div class="gender">
+                        <label for="">Gender:</label>
+                        <input type="radio" name="gender" id="male" > <label for="male">male</label>
+                        <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+                    </div>
+                    <label for="textbox">Message:</label>
+                    <textarea name="message" id="textbox" cols="30" rows="10" style="resize: none;"></textarea>
+                
+                <button name="submit" id="submit" class="search_start_button">Submit</button>
+            </form>
+            </div>
+        </section>
+<footer>
+    <div class="footer_last">
+
+        <div class="footer_last_first">
+        <ul  class="footer_ul">
+            <li><div ><a href=""> USA</a></div></li>
+            <li> <div><a href="">Terms of services</a></div></li>
+            <li><div><a href="">Privacy Policy</a></div></li>
+            <li><div><a href="">Sitemap</a></div></li>
+            </ul>
+        </div>
+        
+        <div class="footer_logo">
+        <ul>
+            <li><a href="https://www.facebook.com/ " target="_blank"><i class='bx bxl-facebook-circle'></i></a></li>
+            <li><a href=""><i class='bx bxl-youtube' ></i></a></li>
+            <li><a href=""><i class='bx bxl-twitter' ></i></a></li>
+            <li><a href=""><i class='bx bxl-instagram' ></i></a></li>
+            <li><a href=""><i class='bx bxl-tiktok' ></i></a></li>
+            <li><a href=""><i class='bx bxl-linkedin' ></i></a></li>
+            <li><a href=""><i class='bx bxl-pinterest-alt' ></i></a></li>
+        </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
